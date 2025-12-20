@@ -14,6 +14,6 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'about', to: 'pages#about'
 
-  # Articles
-  resources :articles, only: [ :index, :show, :new, :create, :edit, :update ]
+  # Articles (Article is the Model name, but the table name is "articles")
+  resources :articles
 end
