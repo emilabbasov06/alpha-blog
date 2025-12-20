@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   # Defines the root path route ('/')
   # root 'posts#index'
   root 'pages#home'
+  # root 'articles#index'
   get 'about', to: 'pages#about'
 
   # Articles (Article is the Model name, but the table name is "articles")
